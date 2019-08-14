@@ -1,0 +1,7 @@
+<h1>new resto</h1>
+<%= simple_form_for @restaurant do |resto| %>
+  <%= resto.input :name %>
+  <%= resto.input :address %>
+  <%= resto.input :category %>
+  <%= resto.submit "create", class: "btn btn-primary" %>
+<% end %>
